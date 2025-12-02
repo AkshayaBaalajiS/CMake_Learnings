@@ -1,0 +1,11 @@
+Create a CMakeLists.txt that:
+
+Defines minimum CMake version
+
+Defines a project
+
+Builds an executable named app
+
+Uses main.cpp
+
+No libraries, no folders — just basic.
