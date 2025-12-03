@@ -1,0 +1,13 @@
+Create a CMakeLists.txt that:
+
+Creates an executable named app
+
+Adds all source files:
+
+main.cpp
+
+math_utils.cpp
+
+Handles header include path if needed
+
+Compiles and runs the program
