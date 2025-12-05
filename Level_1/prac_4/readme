@@ -1,0 +1,7 @@
+Write CMake that:
+
+✔ Creates an executable
+✔ Uses separate include/ and src/
+✔ Uses add_subdirectory(src)
+✔ Compiles without errors
+✔ Runs and prints values
