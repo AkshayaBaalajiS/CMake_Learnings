@@ -1,0 +1,53 @@
+You will learn:
+
+How to create a static library (.a file)
+
+How to link that library with your executable
+
+Folder structure with lib/, include/, and src/
+
+prac_5/
+│── include/
+│     └── math_utils.hpp
+│
+│── src/
+│     ├── math_utils.cpp
+│     └── CMakeLists.txt     ← child CMake
+│
+│── app/
+│     ├── main.cpp
+│     └── CMakeLists.txt     ← child CMake
+│
+└── CMakeLists.txt           ← parent CMake
+
+You must:
+
+set minimum version
+
+set project name
+
+include directories
+
+add subdirectories: src and app
+
+🔹 Child CMakeLists inside src/
+
+You must:
+
+create a static library
+
+library name must be: mathutils
+
+use add_library(mathutils STATIC ...)
+
+add the .cpp file to the library
+
+🔹 Child CMakeLists inside app/
+
+You must:
+
+create an executable
+
+link the static library
+
+print the output
