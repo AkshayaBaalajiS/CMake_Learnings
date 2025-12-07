@@ -1,0 +1,73 @@
+
+What YOU must do in CMake
+🔹 Parent CMake
+
+minimum version
+
+project()
+
+include directory
+
+add_subdirectory(src)
+
+add_subdirectory(app)
+
+🔹 src/CMakeLists.txt
+
+Create a shared library:
+
+add_library(stringutils SHARED string_utils.cpp)
+
+
+Output will be:
+
+libstringutils.so
+
+🔹 app/CMakeLists.txt
+
+create executable
+
+link with the shared library
+
+handle include directories if needed
+
+⚠️ IMPORTANT about shared libraries
+
+When you run the executable:
+
+./output
+
+
+You may get:
+
+error while loading shared libraries: libstringutils.so
+
+
+This is normal for beginners.
+
+You must add:
+
+export LD_LIBRARY_PATH=../src:$LD_LIBRARY_PATH
+
+
+Or fix it inside CMake later (RPATH).
+
+🧪 Expected Program Output
+Upper : HELLO WORLD
+Lower : hello world
+
+
+Write all 3 CMakeLists:
+
+Parent
+
+src/CMakeLists
+
+app/CMakeLists
+
+Build it.
+Run it (set LD_LIBRARY_PATH if needed).
+
+After you're done, show me your CMakeLists and console output.
+
+Then we move to LEVEL 1 → PART 7: RPATH handling + Running shared libs without export.
