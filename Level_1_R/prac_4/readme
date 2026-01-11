@@ -1,0 +1,38 @@
+🧠 How This Project Works (Conceptually)
+
+lib/ builds a library containing multiply()
+
+app/ builds an executable
+
+The executable links against the library
+
+include/ contains headers shared by both
+
+Parent CMake just coordinates everything.
+
+🧩 What You Must Do in CMake
+Parent CMakeLists.txt
+
+Set minimum CMake version
+
+Set project name
+
+Add include directory
+
+Add subdirectories:
+
+lib
+
+app
+
+lib/CMakeLists.txt
+
+Create a library target
+
+Compile math.cpp
+
+app/CMakeLists.txt
+
+Create an executable
+
+Link the library created in lib

@@ -1,0 +1,6 @@
+add_library(math STATIC math.cpp)
+
+set_target_properties(math PROPERTIES 
+ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}
+    LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}
+)
