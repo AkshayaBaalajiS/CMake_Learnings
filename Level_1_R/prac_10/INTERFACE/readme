@@ -1,0 +1,3 @@
+INTERFACE means:
+“This target itself does NOT get the macro.
+ONLY the targets that use (link) this target get the macro.”
