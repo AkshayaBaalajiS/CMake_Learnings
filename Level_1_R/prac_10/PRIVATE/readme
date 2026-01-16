@@ -1,0 +1,3 @@
+here the private used on the cmake 
+
+and private on the target_compile_Definitions will make the macro applied only on the lib included cpp files not the cpp from other dir and the header included on the lib 
