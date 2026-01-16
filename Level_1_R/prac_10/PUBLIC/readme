@@ -1,0 +1,17 @@
+When you say “all files”, you mean:
+
+PUBLIC applies to:
+
+✅ All .cpp files that belong to this library target
+
+✅ All .cpp files of any target that links this library
+
+PUBLIC does NOT mean:
+
+❌ All files in the project
+
+❌ All libraries automatically
+
+❌ Files that do not link this library
+
+So it’s scoped, not global.
