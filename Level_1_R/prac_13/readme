@@ -1,0 +1,7 @@
+❌ Do NOT use include_directories()
+
+❌ Do NOT use absolute paths in app
+
+✔️ Use target_include_directories()
+
+✔️ Apply scope intentionally
