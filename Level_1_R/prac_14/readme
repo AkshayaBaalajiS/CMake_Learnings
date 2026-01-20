@@ -1,0 +1,14 @@
+PRACTICE 11 — WRONG SCOPE = BROKEN BUILD
+
+(Intentionally break things to understand WHY scope matters)
+
+This practice will cement:
+
+PRIVATE vs PUBLIC for include directories
+
+Why “it compiles in lib but fails in app”
+
+How to debug include errors the right way
+
+👉 As usual: SCRIPT ONLY
+👉 You will write the CMake and intentionally break/fix it.
