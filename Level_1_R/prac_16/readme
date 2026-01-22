@@ -1,0 +1,88 @@
+instead of option and the macro we will gove to turn on or off 
+
+now we are giving the string directly
+
+You now know option() (BOOL) — the next step is STRING options in CMake.
+
+I’ll explain what it is, why it exists, and how YOU should use it (conceptually, not dumping code).
+
+🔑 What is a STRING option in CMake?
+
+A STRING option lets the user choose one value from many possibilities,
+instead of just ON / OFF.
+
+Think of it as:
+
+mode selection
+
+backend selection
+
+algorithm selection
+
+platform selection
+
+🧠 Compare BOOL vs STRING (very important)
+Type	User can choose
+option()	ON / OFF
+STRING	Any text value
+
+Examples:
+
+DEBUG, RELEASE
+
+FAST, SAFE
+
+OPENSSL, MBEDTLS
+
+TCP, UDP
+
+🔍 When should you use STRING instead of option()?
+
+Ask yourself:
+
+❓ Are there more than 2 valid choices?
+
+If YES → use STRING
+
+If NO → use option()
+
+🧱 How STRING variables are defined (conceptually)
+
+In the parent CMakeLists.txt, you:
+
+Create a variable
+
+Put it in the CACHE
+
+Give it a default value
+
+Describe allowed values (for humans)
+
+This makes it configurable via -D.
+
+🧪 How user passes a STRING value
+
+From command line:
+
+cmake -DMODE=FAST ..
+
+
+or
+
+cmake -DALGORITHM=SAFE ..
+
+🧠 Important difference from option()
+
+option() automatically creates a BOOL cache variable
+
+STRING must be explicitly cached
+
+STRING values are not validated automatically
+
+So:
+
+User can type anything — YOU must handle it
+
+
+
+PRAC_!7 is the string version of the current 
