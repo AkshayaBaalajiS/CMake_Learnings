@@ -1,0 +1,105 @@
+
+This is PRAC_17
+
+🔹 Line 1
+set(ALGO_MODE "SAFE" CACHE STRING "Algorithm mode: SAFE or FAST")
+
+
+This line does FOUR things at once.
+
+1️⃣ ALGO_MODE
+
+➡️ This is the variable name.
+
+Think of it as:
+
+“I want a variable called ALGO_MODE.”
+
+2️⃣ "SAFE"
+
+➡️ This is the default value.
+
+Meaning:
+
+If the user does nothing, ALGO_MODE will be "SAFE".
+
+So:
+
+cmake ..
+
+
+means:
+
+ALGO_MODE = SAFE
+
+3️⃣ CACHE
+
+➡️ This is the most important word here.
+
+Meaning:
+
+“Store this variable in CMake’s cache so the user can change it from the command line.”
+
+Without CACHE:
+
+-DALGO_MODE=FAST ❌ will NOT work
+
+The variable would exist only during this run
+
+With CACHE:
+
+The value is stored in CMakeCache.txt
+
+User can override it using -D
+
+4️⃣ STRING
+
+➡️ This is the type of the cache variable.
+
+Meaning:
+
+Value is text
+
+Not ON/OFF
+
+Not a number
+
+So valid values are things like:
+
+SAFE
+FAST
+DEBUG
+GPU
+
+5️⃣ "Algorithm mode: SAFE or FAST"
+
+➡️ This is a description for humans.
+
+Where it appears:
+
+ccmake
+
+cmake-gui
+
+Helps users understand the variable
+
+It does nothing to logic.
+
+🔑 Final meaning of line 1 (plain English)
+
+“Create a configurable string variable named ALGO_MODE,
+default it to SAFE,
+allow the user to change it with -D,
+and describe what it means.”
+
+
+
+// ON PARENT CMAKE :
+set(VAR_NAME "DEFAULT_VALUE" CACHE STRING "Description of that variaable ")
+
+if(VAR_NAME STREQUAL VALUE)
+option(MACRO "Be fefault set to" ON / OFF )
+endif()
+
+// ON terminal 
+cmake -DVAR_NAME=VALUE ..
