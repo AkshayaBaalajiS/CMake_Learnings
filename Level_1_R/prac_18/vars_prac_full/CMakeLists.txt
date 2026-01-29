@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.19)
 
 project(CMAKE_PRAC_13)
 
+message("USER = $ENV{user}")
+
 set(INC_DIR ${CMAKE_SOURCE_DIR}/include)
 
 file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/build/output)
