@@ -1,0 +1,10 @@
+/home/hduser/Desktop/CMake_Learnings/Level_1_R/prac_22/build/CMakeFiles/edit_cache.dir
+/home/hduser/Desktop/CMake_Learnings/Level_1_R/prac_22/build/CMakeFiles/rebuild_cache.dir
+/home/hduser/Desktop/CMake_Learnings/Level_1_R/prac_22/build/lib/CMakeFiles/head_so.dir
+/home/hduser/Desktop/CMake_Learnings/Level_1_R/prac_22/build/lib/CMakeFiles/head_a.dir
+/home/hduser/Desktop/CMake_Learnings/Level_1_R/prac_22/build/lib/CMakeFiles/edit_cache.dir
+/home/hduser/Desktop/CMake_Learnings/Level_1_R/prac_22/build/lib/CMakeFiles/rebuild_cache.dir
+/home/hduser/Desktop/CMake_Learnings/Level_1_R/prac_22/build/app/CMakeFiles/server.dir
+/home/hduser/Desktop/CMake_Learnings/Level_1_R/prac_22/build/app/CMakeFiles/client.dir
+/home/hduser/Desktop/CMake_Learnings/Level_1_R/prac_22/build/app/CMakeFiles/edit_cache.dir
+/home/hduser/Desktop/CMake_Learnings/Level_1_R/prac_22/build/app/CMakeFiles/rebuild_cache.dir
